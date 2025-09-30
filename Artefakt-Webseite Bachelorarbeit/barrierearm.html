@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Webseite mit Barrieren</title>
+		<link rel="stylesheet" href="stylesheet.css">
+	</head>
+		<body>
+		<a href="index.html" class="btn"> Zurück zur Starseite </a>
+		<p style="font-size: 50px">Webseite mit Barrieren</p>
+		<p style="font-size: 20px; font-weight: bold">Leere Überschriften und Überschriftebenen werden übersprungen</p>
+		<h1></h1>
+		<h6></h6>
+		<p style="font-size: 20px; font-weight: bold">Mindestkontrast nicht eingehalten</p>
+		<p style="color: #0000ff; background-color: #ff0000; padding: 1rem; font-size: 30px">
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+			dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+			clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+			consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+			sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+			sea takimata sanctus est Lorem ipsum dolor sit amet.
+		</p>
+		<p style="font-size: 20px; font-weight: bold">Kein alternativen Text beim Bild und es ist zu klein</p>
+		<img src="buecher.png" />
+		<p style="font-size: 20px; font-weight: bold">Bild ist anklickbar, aber hat kein alternativen Text</p>
+		<a
+			href="https://www.flaticon.com/free-icon/stack-of-books_5832416?term=book&page=1&position=5&origin=search&related_id=5832416"
+			><img src="buecher.png"
+		/></a>
+		<p style="font-size: 20px; font-weight: bold">Fehlende Formularbezeichnung und Leere Formularbezeichnung</p>
+		<form>
+			<input type="text" name="nutzername" placeholder="Benutzername" />
+			<br />
+			<label for="nutzername"></label>
+			<input type="passwort" id="passwort" name="passwort" />
+		</form>
+		<p style="font-size: 20px; font-weight: bold">Leere Schaltfläche</p>
+		<button></button>
+
+		<p style="font-size: 20px; font-weight: bold">Veraltetes Element, welches sich bewegt</p>
+		<marquee>Dieses ist eine wichtige Meldung</marquee>
+
+		<p style="font-size: 20px; font-weight: bold">Dies ist ein Bereich mit defekten ARIA-Referenzen</p>
+		<div aria-labelledby="existiertNicht"><p>Defekt</p></div>
+
+		<button aria-describedby="fehlendeBeschreibung">Defekter Button</button>
+		<p style="font-size: 20px; font-weight: bold">Dies ist ein Bereich mit einem defekten ARIA-Menü</p>
+		<div role="menu">
+			<div>Startseite</div>
+			<span> Produkte </span>
+			<p>Kontakt</p>
+		</div>
+	</body>
+</html>
